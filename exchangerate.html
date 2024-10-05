@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flywise</title>
+  <link href="exchangerate.css" rel="stylesheet " />
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="header">
+        <div class="name">
+          <h1>Flywise Currency Exchanger 💸</h1>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <main>
+      <div class="container_body">
+        <div class="currency-input">
+          <label for="inp">From</label>
+          <select id="from_coun">
+            <option value="usd">USD - Dollar</option>
+            <option value="euro">EUR - Euro</option>
+            <option value="yen">JPY - Yen</option>
+          </select>
+
+        </div>
+        <div class="conversion-arrow">&#x21c4;</div>
+        <div class="currency-input">
+          <label for="out">To</label>
+          <select id="to_coun">
+            <option value="rupee">INR - Rupee</option>
+            <option value="euro">EUR - Euro</option>
+            <option value="yen">JPY - Yen</option>
+          </select>
+
+        </div>
+        <br><br>
+        <div class="current_rate">
+          <button type="button">Current rate</button>
+          <p class="rate">1.00 US Dollar =84.02 Indian Rupees</p>
+          <br><br>
+          <div class="exchange_rate">
+            <form action="/submit-me">
+              <label for="prof">Profit % :</label>
+              <input type="text" id="profit" required="true">
+              <input type="submit">
+            </form>
+
+            <p class="rate">1.00 US Dollar =82.02 Indian Rupees</p>
+          </div>
+          <br><br>
+          <div class="convert">
+            <label for="i/p">Input Amount :</label>
+            <input type="text">
+            <div class="conversion-arrow">&#x21c4;</div>
+            <label for="o/p">Ouput Amount : 40,915</label>
+
+
+            <div class="align_button">
+              <button type="button">Convert</button>
+
+              <button type="button">Clear</button>
+            </div>
+            </form>
+          </div>
+
+        </div>
+    </main>
+  </div>
+ 
+
+</body>
+
+</html>
